@@ -8,7 +8,7 @@ const MoviesPage = ({ match, movies }) => (
   <div>
     <MoviesList movies={movies} />
   </div>
-  <MoviesList movies={movies}/}
+  <MoviesList movies={movies}/>
 )
 
 export default MoviesPage
