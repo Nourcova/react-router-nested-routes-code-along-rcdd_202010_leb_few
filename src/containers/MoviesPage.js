@@ -8,7 +8,7 @@ const MoviesPage = ({ match, movies }) => (
   <div>
     <MoviesList movies={movies} />
     <MoviesList movies={movies}/>
-    <Route path={`${match.url}/:movieId`} component={MovieShow movies={movies}/>}/>
+    <Route path={`${match.url}/:movieId`} render={routerProps => <MovieShow {... routerProps} movies={movies}/>}/>
   </div>
   
 )
